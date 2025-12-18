@@ -1,0 +1,45 @@
+nav {
+    position: fixed;
+    width: 100%;
+    background: $secondary;
+    color: white;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        gap: 90px;
+        list-style: none;
+    }
+}
+
+.main0 {
+    background: $accent;
+    margin-top: 70px;
+
+    .main {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.box0 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    .box {
+        @include card(#f4a261);
+
+        .box1 {
+            background: $primary;
+            border-radius: 20px 20px 0 0;
+        }
+    }
+}
+
+footer {
+    background: $dark;
+    color: $light;
+    display: flex;
+    justify-content: space-evenly;
+}

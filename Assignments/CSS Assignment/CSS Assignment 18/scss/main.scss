@@ -1,0 +1,16 @@
+@import "variables";
+@import "mixins";
+@import "typography";
+@import "layout";
+
+$primary: #C5172E;
+
+@mixin card($bg) {
+    background: $bg;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.box {
+    @include card(#f4a261);
+}

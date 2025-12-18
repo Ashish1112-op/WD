@@ -1,0 +1,12 @@
+@mixin card($bg) {
+    background-color: $bg;
+    padding: $space-md;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        width: 90%;
+        margin-bottom: $space-md;
+    }
+}
