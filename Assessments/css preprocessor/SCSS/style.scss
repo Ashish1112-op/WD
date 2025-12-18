@@ -1,0 +1,21 @@
+@import 'variables';
+@import 'base';
+@import 'header';
+@import 'hero';
+@import 'features';
+@import 'footer';
+
+// ग्लोबल स्टाइल्स
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: $dark-text;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        .animation-container {
+            width: 90%;
+            max-width: 800px;
+            height: 150px;
+            margin: 0 auto;
+            border: 2px solid #ccc;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            animation-name: Ash;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: absolute;
+            background-color: #007bff;
+            left: 0;
+        }
+
+
+        @keyframes Ash {
+            0% {
+                left: 0;
+                background-color: #007bff;
+            }
+
+            50% {
+                background-color: #ffc107;
+            }
+
+            100% {
+                left: calc(100% - 100px);
+                background-color: #dc3545;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Animation</h1>
+
+    <div class="animation-container">
+        <div class="animated-box"></div>
+    </div>
+
+</body>
+
+</html>

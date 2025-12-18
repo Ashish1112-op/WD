@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        .flex-element {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex-container">
+
+        <header class="flex-element">
+            <h2>Website Header</h2>
+            <p>This is the top section of the layout.</p>
+        </header>
+
+        <main class="flex-element">
+            <h2>Main Content Area</h2>
+            <p>This section is used to display the primary content.</p>
+            <p>In the default mobile view, all elements are stacked in a column.</p>
+        </main>
+
+        <footer class="flex-element">
+            <h2>Website Footer</h2>
+            <p>Copyright © 2025 Flexbox Assignment</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

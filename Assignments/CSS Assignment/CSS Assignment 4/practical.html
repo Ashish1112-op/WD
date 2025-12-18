@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+}
+
+.list-container {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-ul {
+    list-style-type: none; 
+    padding-left: 0;
+}
+
+.custom-ul li {
+    color: #495057;
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.custom-ul li::before {
+    content: "⭐"; 
+    position: absolute;
+    left: 0;
+    color: #ffc107; 
+    font-style: normal; 
+    font-size: 16px;
+    top: 0;
+}
+
+.custom-ol {
+    list-style-type: none; 
+    padding-left: 0;
+    counter-reset: custom-counter; 
+}
+
+.custom-ol li {
+    font-weight: bold; 
+    font-size: 17px;
+    margin-bottom: 12px;
+    padding-left: 35px;
+    position: relative;
+    counter-increment: custom-counter; 
+}
+
+.custom-ol li::before {
+    content: "✅ "; 
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 16px;
+    top: 0;
+}
+    </style>
+</head>
+
+<body>
+
+    <h1>Assignment 4: Custom List Styling</h1>
+
+    <div class="list-container">
+        <h2>My Favourite Anime List</h2>
+        <ol class="custom-ol">
+            <li>Dragon Ball Z</li>
+            <li>Vinland Saga</li>
+            <li>Naruto</li>
+            <li>Attack On Titan</li>
+        </ol>
+    </div>
+
+    <div class="list-container">
+        <h2>My Favourite Movie List</h2>
+        <ul class="custom-ul">
+            <li>Your Name</li>
+            <li>A Silent Voice</li>
+            <li>Demon Slayer: Infinity Castle Movie</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

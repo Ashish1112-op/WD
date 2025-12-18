@@ -1,0 +1,50 @@
+.hero {
+    padding: 50px 0;
+    // यहां हीरो सेक्शन के नीचे एक हल्की बॉर्डर है
+    border-bottom: 1px solid #eee; 
+}
+
+.hero-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 2; // टेक्स्ट को इमेज से ज़्यादा जगह दें
+    h1 {
+        font-size: 2.5em;
+        margin-top: 0;
+    }
+    p {
+        color: $gray-text;
+    }
+}
+
+.hero-image {
+    flex: 1; 
+    text-align: center;
+    // यहां आपको PDF में दिखाए गए 3 गोल इमेजेज का placeholder रखना होगा। 
+    // यह जटिल है, इसलिए हम एक बॉक्स और टेक्स्ट का उपयोग करेंगे।
+    .placeholder-image {
+        background-color: #f0f0f0;
+        height: 200px;
+        width: 100%;
+        border: 1px solid #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    p {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        // यहां Placeholder Image को दिखाने के लिए कुछ और CSS की आवश्यकता होगी
+    }
+}

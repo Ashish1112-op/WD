@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Bag</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container-outer">
+        <div class="shopping-bag">
+            <h2>Shopping Bag</h2>
+
+            <div class="item-row" data-id="1">
+                <span class="remove">X</span>
+                <img src="https://www.campusshoes.com/cdn/shop/files/STOM_BLK-WHT_1.jpg?v=1756122410">
+                <div class="details">
+                    <p>Black Shoes</p>
+                    <small>White & Black</small>
+                </div>
+                <div class="qty">
+                    <button data-change="-1">-</button>
+                    <span class="quantity">2</span>
+                    <button data-change="1">+</button>
+                </div>
+                <div class="price">$<span class="total">1098</span></div>
+            </div>
+
+            <div class="item-row" data-id="2">
+                <span class="remove">X</span>
+                <img
+                    src="https://imageio.forbes.com/blogs-images/timnewcomb/files/2019/01/Sp19_BB_Nike_Adapt_20181218_NIKE0538_Detail5_original-1200x900.jpg">
+                <div class="details">
+                    <p>Future Sneakers</p>
+                    <small>Black</small>
+                </div>
+                <div class="qty">
+                    <button data-change="-1">-</button>
+                    <span class="quantity">1</span>
+                    <button data-change="1">+</button>
+                </div>
+                <div class="price">$<span class="total">870</span></div>
+            </div>
+
+            <div class="item-row" data-id="3">
+                <span class="remove">X</span>
+                <img
+                    src="https://www.wholesalescarvesusa.com/bmz_cache/u/u-usc1904-2jpgimagewatermark1050x1400jpg.image.450x600.jpg">
+                <div class="details">
+                    <p>Scarf</p>
+                    <small>Red</small>
+                </div>
+                <div class="qty">
+                    <button data-change="-1">-</button>
+                    <span class="quantity">1</span>
+                    <button data-change="1">+</button>
+                </div>
+                <div class="price">$<span class="total">349</span></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

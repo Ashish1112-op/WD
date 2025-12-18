@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #343a40;
+            margin-bottom: 40px;
+        }
+
+        .product-card {
+            background-color: white;
+            width: 300px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-title {
+            font-size: 1.5em;
+            color: #007bff;
+            margin: 0 0 10px 0;
+        }
+
+        .product-description {
+            color: #6c757d;
+            font-size: 0.9em;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .product-price {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+
+        .add-to-cart-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Featured Product</h1>
+
+    <div class="product-card">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ8obXmGtFT8RNU7xWrq8_wFqwepW6UxxFGQ&s"
+            alt="Goku Shirt" class="product-image">
+
+        <div class="card-content">
+            <h2 class="product-title">Luxury Chronograph Watch</h2>
+
+            <p class="product-description">
+                A highly durable and stylish timepiece crafted with stainless steel and sapphire crystal. Water
+                resistant up to 100 meters.
+            </p>
+
+            <p class="product-price">$299.99</p>
+
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

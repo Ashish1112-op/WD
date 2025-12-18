@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes and Pseudo-Elements</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-color: #f4f4f9;
+            padding: 30px;
+            color: #333;
+        }
+
+        h1::before,
+        h2::before {
+            content: "✨ ";
+            color: #ffd700;
+            font-size: 1.1em;
+        }
+
+
+        .navigation {
+            margin: 20px 0 40px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            padding: 8px 15px;
+            margin-right: 15px;
+            border-radius: 4px;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .navigation a:link {
+            color: #007bff;
+            background-color: #e9f5ff;
+        }
+
+        .navigation a:visited {
+            color: #6f42c1;
+            background-color: #f3effe;
+        }
+
+        .navigation a:hover {
+            color: white;
+            background-color: #0056b3;
+            text-decoration: underline;
+        }
+
+        .navigation a:active {
+            color: yellow;
+            background-color: #dc3545;
+            transform: translateY(1px);
+        }
+
+
+        .styled-paragraph::first-line {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #28a745;
+            text-transform: uppercase;
+        }
+
+        .styled-paragraph {
+            line-height: 1.6;
+            border-left: 5px solid #ccc;
+            padding-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Assignment 11 Demo</h1>
+    </header>
+
+    <nav class="navigation">
+        <a href="#home">Home Link</a>
+        <a href="#services">Services Link (Visited)</a>
+        <a href="#contact">Contact Link</a>
+    </nav>
+
+    <main>
+        <h2>About Pseudo-Elements</h2>
+
+        <p class="styled-paragraph">
+            This paragraph demonstrates the use of the ::first-line pseudo-element.
+            The first line, regardless of how wide the browser window is, will have a unique font size and color.
+            This styling will dynamically adjust if you resize the window, proving it's styling the logical line break,
+            not a fixed amount of text.
+        </p>
+
+        <h2>Link States</h2>
+        <p>Click and hover over the links above to see the pseudo-classes in action.</p>
+
+    </main>
+
+</body>
+
+</html>

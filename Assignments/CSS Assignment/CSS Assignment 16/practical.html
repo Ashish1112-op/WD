@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms & Transitions</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .image-wrapper {
+            width: 250px;
+            height: 180px;
+            overflow: hidden;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+            transform: rotate(0deg) scale(1);
+        }
+
+        .image-wrapper img:hover {
+            transform: scale(1.1) rotate(2deg);
+            filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3));
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Image Gallery</h1>
+   
+
+    <div class="image-gallery">
+
+        <div class="image-wrapper">
+            <img src="https://cdn.magicdecor.in/com/2023/10/20174720/Anime-Scenery-Wallpaper-for-Walls.jpg"
+                alt="Gallery Image 1">
+        </div>
+
+        <div class="image-wrapper">
+            <img src="https://thumbs.dreamstime.com/b/serene-mountain-temple-cherry-blossoms-anime-landscape-352467091.jpg"
+                alt="Gallery Image 2">
+        </div>
+
+        <div class="image-wrapper">
+            <img src="https://i.pinimg.com/736x/7b/0a/61/7b0a6179b66318757d09b8e477528cec.jpg" alt="Gallery Image 3">
+        </div>
+
+    </div>
+
+</body>
+
+</html>

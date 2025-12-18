@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            --primary-color: #1abc9c;
+            --secondary-color: #2c3e50;
+            --text-color: #2c3e50;
+            --background-light: #ecf0f1;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-light);
+            color: var(--text-color);
+        }
+
+        .page-container {
+            max-width: 900px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-top: 0;
+        }
+
+        main {
+            padding: 30px;
+            background-color: white;
+        }
+
+        .content-box {
+            padding: 15px;
+            margin-top: 20px;
+
+            border: 2px solid var(--secondary-color);
+            border-radius: 6px;
+        }
+
+        .content-box p {
+            color: var(--text-color);
+        }
+
+        footer {
+            background-color: #e6e6e6;
+            color: var(--text-color);
+            padding: 10px 20px;
+            text-align: center;
+            border-top: 1px solid var(--secondary-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-container">
+
+        <header>
+            <h1>Website Header</h1>
+            <p>This header uses the primary color for the background and text color for the text.</p>
+        </header>
+
+        <main>
+            <h2>Main Content Area</h2>
+            <div class="content-box">
+                <p>This content box has a border using the secondary color.</p>
+                <p>CSS variables make theme changes easy. To change the theme, only three lines of CSS need
+                    modification!</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Website Footer | Theme Consistency Demo</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

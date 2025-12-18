@@ -1,0 +1,32 @@
+.features {
+    padding: 50px 0;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: center;
+}
+
+.feature-item {
+    flex: 1;
+    .feature-placeholder-box {
+        background-color: #f0f0f0;
+        height: 150px;
+        width: 100%;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+    }
+    h3 {
+        color: $dark-text;
+        margin-bottom: 10px;
+    }
+    p {
+        color: $gray-text;
+        min-height: 80px; // टेक्स्ट की 4 लाइनें सुनिश्चित करने के लिए (लगभग)
+    }
+    .main-button {
+        margin-top: 15px;
+    }
+}

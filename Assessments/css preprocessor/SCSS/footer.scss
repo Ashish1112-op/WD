@@ -1,0 +1,92 @@
+footer {
+    background-color: $dark-bg;
+    color: $light-text;
+    padding-top: 50px;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #444; // फुटर के मुख्य भाग को कॉपीराइट बार से अलग करने के लिए
+    
+    h3 {
+        color: $light-text;
+        text-transform: uppercase;
+        margin-top: 0;
+    }
+}
+
+.footer-col {
+    flex: 1; // सभी कॉलम को समान चौड़ाई दें
+    
+    // Latest Posts कॉलम के स्टाइल्स
+    &.posts-col {
+        ul {
+            list-style: none;
+            padding: 0;
+            li {
+                display: flex;
+                gap: 15px;
+                margin-bottom: 15px;
+                .date-box {
+                    text-align: center;
+                    background-color: #555;
+                    padding: 5px;
+                    line-height: 1.2;
+                    span {
+                        display: block;
+                        font-size: 1.5em;
+                        font-weight: bold;
+                    }
+                }
+                .post-text {
+                    h4 {
+                        margin: 0 0 5px 0;
+                        font-size: 1.1em;
+                    }
+                    p {
+                        margin: 0;
+                        font-size: 0.9em;
+                        color: #ccc;
+                    }
+                }
+            }
+        }
+    }
+    
+    // About कॉलम के स्टाइल्स
+    &.about-col {
+        p {
+            color: #ccc;
+        }
+    }
+    
+    // Stay Connected कॉलम के स्टाइल्स
+    &.connect-col {
+        ul {
+            list-style: none;
+            padding: 0;
+            li {
+                // यहां हम extend का उपयोग करते हैं
+                @extend %footer-list-item; 
+                i {
+                    margin-right: 10px;
+                    width: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.copyright-bar {
+    padding: 15px 0;
+    text-align: center;
+    p {
+        margin: 0;
+        font-size: 0.9em;
+        color: #aaa;
+    }
+}

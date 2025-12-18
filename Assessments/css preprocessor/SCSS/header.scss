@@ -1,0 +1,33 @@
+header {
+    background-color: $dark-bg; // गहरा बैकग्राउंड
+    padding: 15px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: $light-text;
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: serif; // 'Bloom' फ़ॉन्ट जैसा दिखने के लिए
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    li a {
+        color: $light-text;
+        text-decoration: none;
+        padding: 0 15px;
+        font-weight: bold;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}

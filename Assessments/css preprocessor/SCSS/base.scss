@@ -1,0 +1,33 @@
+// प्लेसहोल्डर सिलेक्टर for Buttons
+%button-style {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $primary-color;
+    color: $light-text;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: bold;
+    // कोने हल्के गोल हैं जैसा कि डिज़ाइन में है
+    border-radius: 3px; 
+}
+
+// फुटर लिंक्स के लिए सामान्य स्टाइल (Facebook, Twitter, etc.)
+%footer-list-item {
+    padding: 5px 0;
+    list-style: none;
+    a {
+        text-decoration: none;
+        color: $light-text;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+// यह प्लेसहोल्डर मुख्य बटन के लिए उपयोग किया जाएगा
+.main-button {
+    @extend %button-style;
+}

@@ -1,0 +1,260 @@
+/* style.css */
+
+/* Global Variables & Mixins - Compiled */
+/* The variables are replaced by their values in the final output */
+/* $primary-color: #f7a83d; */
+/* $dark-bg: #333333; */
+/* $light-text: #ffffff; */
+/* $dark-text: #000000; */
+/* $gray-text: #666666; */
+
+/* --- Base & Extend (_base.scss) --- */
+
+/* The styles defined in %button-style and %footer-list-item 
+   are applied directly to the selectors that use @extend. */
+
+.main-button, .feature-item .main-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f7a83d; /* $primary-color */
+    color: #ffffff; /* $light-text */
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-radius: 3px; 
+}
+
+.footer-col.connect-col ul li { /* This selector comes from the @extend in _footer.scss */
+    padding: 5px 0;
+    list-style: none;
+}
+.footer-col.connect-col ul li a {
+    text-decoration: none;
+    color: #ffffff; /* $light-text */
+}
+.footer-col.connect-col ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* --- Global Styles (style.scss) --- */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #000000; /* $dark-text */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* --- Header (_header.scss) --- */
+
+header {
+    background-color: #333333; /* $dark-bg */
+    padding: 15px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff; /* $light-text */
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+nav ul li a {
+    color: #ffffff; /* $light-text */
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #f7a83d; /* $primary-color */
+}
+
+
+/* --- Hero (_hero.scss) --- */
+
+.hero {
+    padding: 50px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.hero-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 2;
+}
+.hero-text h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+}
+.hero-text p {
+    color: #666666; /* $gray-text */
+}
+
+.hero-image {
+    flex: 1; 
+    text-align: center;
+}
+.hero-image .placeholder-image {
+    background-color: #f0f0f0;
+    height: 200px;
+    width: 100%;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.hero-image p {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* --- Features (_features.scss) --- */
+
+.features {
+    padding: 50px 0;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: center;
+}
+
+.feature-item {
+    flex: 1;
+}
+.feature-item .feature-placeholder-box {
+    background-color: #f0f0f0;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+.feature-item h3 {
+    color: #000000; /* $dark-text */
+    margin-bottom: 10px;
+}
+.feature-item p {
+    color: #666666; /* $gray-text */
+    min-height: 80px;
+}
+.feature-item .main-button {
+    margin-top: 15px;
+}
+
+
+/* --- Footer (_footer.scss) --- */
+
+footer {
+    background-color: #333333; /* $dark-bg */
+    color: #ffffff; /* $light-text */
+    padding-top: 50px;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #444;
+}
+.footer-grid h3 {
+    color: #ffffff; /* $light-text */
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.footer-col {
+    flex: 1;
+}
+
+.footer-col.posts-col ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-col.posts-col ul li {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.footer-col.posts-col ul li .date-box {
+    text-align: center;
+    background-color: #555;
+    padding: 5px;
+    line-height: 1.2;
+}
+.footer-col.posts-col ul li .date-box span {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.footer-col.posts-col ul li .post-text h4 {
+    margin: 0 0 5px 0;
+    font-size: 1.1em;
+}
+.footer-col.posts-col ul li .post-text p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+.footer-col.about-col p {
+    color: #ccc;
+}
+
+.footer-col.connect-col ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-col.connect-col ul li i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.copyright-bar {
+    padding: 15px 0;
+    text-align: center;
+}
+.copyright-bar p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #aaa;
+}

@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #007bff;
+    --error-color: #dc3545;
+    --background-color: #f8f9fa;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Flexbox/Grid Layout for Form (Requirement: Flexbox or Grid) */
+#registrationForm {
+    display: flex;
+    flex-wrap: wrap; /* Wraps items on smaller screens */
+    gap: 20px;
+}
+
+.form-group {
+    /* 50% width on large screens to show two columns */
+    flex: 1 1 calc(50% - 10px); 
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    flex: 1 1 100%; /* Full width for Textarea/Comments */
+}
+
+/* Fallback for smaller screens (Mobile Optimization) */
+@media (max-width: 600px) {
+    .form-group {
+        flex: 1 1 100%; /* Single column on mobile */
+    }
+}
+
+
+/* Form Controls Styling (Labels & Inputs) */
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+.required {
+    color: var(--error-color);
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Validation Error Messages */
+.error-message {
+    color: var(--error-color);
+    font-size: 0.9em;
+    margin-top: 5px;
+    min-height: 20px; /* Space reserved for message */
+}
+.form-group.has-error input, .form-group.has-error select {
+    border-color: var(--error-color);
+}
+
+
+/* Buttons */
+.form-actions {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.submit-btn, .reset-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.reset-btn {
+    background-color: #6c757d;
+    color: white;
+}
+
+
+/* Registrations Page Table Styling (For registrations.html) */
+#registrationsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+#registrationsTable th, #registrationsTable td {
+    border: 1px solid #ddd;
+    padding: 12px 8px;
+    text-align: left;
+}
+#registrationsTable th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
