@@ -16,7 +16,7 @@ p {
 }
 
 nav {
-  position: fixed;
+  padding: 15px;
   width: 100%;
   background: #720026;
   color: white;
@@ -31,7 +31,7 @@ nav ul {
 .main0 {
   background: #FFB22C;
   position: relative;
-  top: 50px;
+  top: 0px;
 }
 .main0 .main {
   display: flex;
@@ -79,6 +79,7 @@ nav ul {
 footer {
   position: relative;
   height: 300px;
+  top: 60px;
   background: #0d3b66;
   color: bisque;
   display: flex;
@@ -94,4 +95,28 @@ footer {
   background: #f4a261;
   padding: 20px;
   border-radius: 20px;
+}
+
+.main2{
+  text-align: center;
+  position: relative;
+
+}
+
+.our{
+  font-size: 40px;
+  text-align: center;
+}
+
+.con h3{
+  font-size: 25px;
+}
+
+.con p{
+  font-size: 20px;
+}
+
+.read{
+  padding: 10px;
+  font-size: 15px;
 }
