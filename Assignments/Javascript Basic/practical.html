@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <div class="form-header">
+      <h2>Registration Form</h2>
+    </div>
+    <form id="registrationForm">
+      <div class="form-group">
+        <input type="text" id="name" name="name" placeholder="Name*" required>
+        <label class="hint-label">Please enter your full name</label>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder="Email*" required>
+        <label class="hint-label">Please enter your email address</label>
+      </div>
+      <div class="form-group">
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number*" pattern="[0-9]{10}" required>
+        <label class="hint-label">Please enter your phone number</label>
+      </div>
+      <div class="form-group">
+        <input list="subject-options" id="subject" name="subject" placeholder="Subject*" required>
+        <datalist id="subject-options">
+          <option value="MCA">
+          <option value="BCA">
+          <option value="MBA">
+          <option value="B.Tech">
+          <option value="Diploma in IT">
+        </datalist>
+        <label class="hint-label">Please select your subject</label>
+      </div>
+      <div class="form-group">
+        <textarea id="message" name="message" placeholder="Message*" required></textarea>
+        <label class="hint-label">Please enter your message</label>
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+ <script type="module" src="./main.js"></script>
+</body>
+</html>
